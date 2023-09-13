@@ -1,0 +1,39 @@
+.categoryContent {
+    display: flex;
+}
+
+.categoryList {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 14px;
+    margin: 3px;
+    box-shadow: inset 0px 0px 30px 0px #000;
+}
+
+.categoryTitle {
+    margin: 20px 10px;
+    padding: 20px 10px;
+    font-size: 1.2rem;
+}
+
+.categoryText {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: #FFF;
+}
+
+.burguer {
+    background-image: url('../../../../public/hamburguer.jpeg');
+}
+.chicken {
+    background-image: url('../../../../public/pizza.webp');
+}
+.pizza {
+    background-image: url('../../../../public/chicken.png');
+}

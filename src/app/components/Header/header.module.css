@@ -1,0 +1,9 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc80;
+}
+.Logo {
+    max-width: 123px;
+    margin: 20px;
+}
