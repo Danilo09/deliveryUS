@@ -16,10 +16,6 @@
     /* Add more styles as needed */
   }
 
-.menuOpen{
-    display: block;
-}
-
 .menuClose {
     display: none !important;
 }

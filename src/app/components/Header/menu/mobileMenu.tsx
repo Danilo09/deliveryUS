@@ -1,29 +1,29 @@
 import React, { useState } from 'react'
 import styles from './mobile-menu.module.css'
 
-type Props = {}
+type Props = {
+    action?: () => void
+}
 
-const MobileMenu: React.FC = (props: Props) => {
+const MobileMenu: React.FC<Props> = (props: Props) => {
 
-    const [menuToggle, setMenuToggle] = useState(true)
-
-    const toggleMobileMenu = () => {
-        setMenuToggle(!menuToggle);
-    }
+    const action = props.action
 
     return (
         <nav
-            className={`${styles.mobileMenu} ${menuToggle ? 'menuOpen' : 'menuClose'}`}>
-            <span
-                onClick={toggleMobileMenu}
-                className={styles.closeButton}>X</span>
+            className={`${styles.mobileMenu}`}>
+            <a
+                onClick={action}
+                className={styles.closeButton}>X</a>
             <ul>
-                <li>Início</li>
-                <li>Produtos</li>
-                <li>Contato</li>
+                <li><a href="">Início</a></li>
+                <li><a href="">Produtos</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Entrar</a></li>
             </ul>
         </nav>
     )
 }
 
 export default MobileMenu
+

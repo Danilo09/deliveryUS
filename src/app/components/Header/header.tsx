@@ -29,9 +29,8 @@ const Header = (props: Props) => {
                     />
                 </div>
                 <Button
-                    className={!isMobileMenuOpen ? 'menuOpen' : 'menuClose'}
                     onClick={toggleMobileMenu}>Menu here!</Button>
-                {isMobileMenuOpen && <MobileMenu />}
+                {isMobileMenuOpen && <MobileMenu action={toggleMobileMenu} />}
 
             </section>
         </>
