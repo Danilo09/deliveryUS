@@ -29,7 +29,9 @@ const Header = (props: Props) => {
                     />
                 </div>
                 <Button
-                    onClick={toggleMobileMenu}>Menu here!</Button>
+                    onClick={toggleMobileMenu}
+                    id="toggleMenu"
+                >Menu here!</Button>
                 {isMobileMenuOpen && <MobileMenu action={toggleMobileMenu} />}
 
             </section>
